@@ -31,6 +31,47 @@ void add_node(Node* tree,type_data data){
 		}
 	}
 }
+
+
+//=================================================================================
+typedef struct stack{
+	Node* data;
+	int top;
+	int max_size; 
+}stack;
+
+stack CreateStack(int max_size){
+	stack* s=(stack*)malloc(sizeof(stack));
+	s->data=(Node*)malloc(max_size*sizeof(Node));
+	s->top=-1;
+	s->max_size=max_size;
+	return *s;
+}
+
+bool is_full(stack *s){
+	return s->top==s->max_size ;
+}
+
+bool push(stack *s,Node x){
+	if(is_full(s)){
+		printf("stack is full£¡");
+		return false; 
+	}else{
+		s->data[++(s->top)]=x;
+		return true;
+	}
+}
+
+bool is_empty(stack *s){
+	return s->top==-1;
+}
+
+Node* pop(stack *s){
+	return &s->data[(s->top)--]; 	
+}
+//=================================================================================
+
+
 //µÝ¹é±éÀú 
 void pt(Node* tree){
 	if(tree){
@@ -39,9 +80,22 @@ void pt(Node* tree){
 		pt(tree->right_node);
 	}
 }
-//¶ÑÕ»±éÀú
- 
 
+//¶ÑÕ»±éÀú
+void stackpt(Node* tree,int max_size){
+	stack s=CreateStack(max_size);
+	while(tree||!is_empty(&s)){
+		while(tree){
+			push(&s,*tree);
+			tree=tree->left_node;
+		}
+		if(!is_empty(&s)){
+			tree=pop(&s);
+			printf("%d   ",tree->data);
+			tree=tree->right_node;
+		}
+	}
+} 
 
 int main(){
 	Node tree;
@@ -52,6 +106,9 @@ int main(){
  	for(int i=0;i<sizeof(number)/4;i++){
  		add_node(&tree,number[i]);
 	 }
-	pt(&tree); 
-	 
+	pt(&tree);
+	printf("\n");
+	stackpt(&tree,sizeof(number)/4);
+	return 0;	 
 }
+
