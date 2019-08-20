@@ -21,7 +21,7 @@ void add_node(Node* tree,type_data data){
 			}
 		}else{
 			if(tree->right_node==NULL){
-    	    	tree->right_node=(Node*)malloc(sizeof(Node));
+				tree->right_node=(Node*)malloc(sizeof(Node));
 				tree->right_node->data=data;
 				tree->right_node->right_node=NULL;
 				tree->right_node->left_node=NULL;
@@ -31,7 +31,6 @@ void add_node(Node* tree,type_data data){
 		}
 	}
 }
-
 
 //=================================================================================
 typedef struct stack{
