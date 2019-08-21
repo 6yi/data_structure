@@ -113,6 +113,9 @@ Node* find_pos(Node* tree,type_data data){
 
 
 Node* find_max(Node* tree){
+	if(tree==NULL){
+		return NULL;
+	}
 	
 	while(tree->right_node){
 		tree=tree->right_node;
@@ -121,8 +124,20 @@ Node* find_max(Node* tree){
 }
 
 
-
-
+Node* insert_node(Node* tree,type_data data){
+	if(tree==NULL){
+		tree=(Node*)malloc(sizeof(Node));
+		tree->data=data;
+		tree->left_node=tree->right_node=NULL;
+	}else{
+		if(data>tree->data){
+			tree->right_node=insert_node(tree->right_node,data);
+		}else{
+			tree->left_node=insert_node(tree->left_node,data);
+		}
+	}
+	return tree;
+}
 int main(){
 	Node tree;
 	tree.data=NULL;
@@ -136,7 +151,9 @@ int main(){
 //	printf("\n");
 //	stackpt(&tree,sizeof(number)/4);
 //	printf("%d",find_pos(&tree,11)->data);
-	printf("%d",find_max(&tree)->data);
+	insert_node(&tree,900);
+//	printf("%d",find_max(&tree)->data);
+	pt(&tree);
 	return 0;	 
 }
 
