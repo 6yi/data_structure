@@ -123,7 +123,6 @@ Node* find_max(Node* tree){
 	return tree;
 }
 
-
 Node* insert_node(Node* tree,type_data data){
 	if(tree==NULL){
 		tree=(Node*)malloc(sizeof(Node));
@@ -138,6 +137,15 @@ Node* insert_node(Node* tree,type_data data){
 	}
 	return tree;
 }
+
+
+
+
+
+
+
+
+
 int main(){
 	Node tree;
 	tree.data=NULL;
