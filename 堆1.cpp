@@ -8,7 +8,6 @@ typedef struct heap{
 	int size;
 }heap;
 
-
 heap create_heap(int maxSize){
 	heap* p=(heap*)malloc(sizeof(heap));
 	p->data=(type_data*)malloc(sizeof(type_data)*(maxSize+1));
@@ -37,14 +36,11 @@ void insert(heap* p,type_data data){
 }
 
 void show(heap* p){
-	
 	for(int i=0;i<p->maxSize;i++){
 		printf("%d  ",p->data[i]);
 	}
 	
 }
-
-
 
 int main(){
 	heap max_heap=create_heap(10);
