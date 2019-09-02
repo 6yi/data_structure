@@ -8,6 +8,7 @@ typedef struct list{
 	node* plist;
 	node* last;
 }list;
+
 void add(int x,list *plist){
 	node* p=(node*)malloc(sizeof(node));
 	p->x=x;
@@ -20,6 +21,7 @@ void add(int x,list *plist){
 		plist->last=p;
 	}
 }
+
 void show(list *plist){
 	node* foo;
 	foo=plist->plist;
@@ -29,6 +31,7 @@ void show(list *plist){
 	}
 	printf("\n");
 }
+
 void insert(int number,node* foo,list *plist){
 	number--;
 	if(number==-1){
