@@ -4,24 +4,22 @@
 typedef int vertex;
 typedef int weight;
 
-typedef struct AdjVnode *ptrVNode;
+typedef struct AdjVNode *ptrVNode;
 struct AdjVNode{
-	vertex adjv;
+	vertex ad;
 	weight weight;
 	ptrVNode next;
 };
 
-
 typedef struct Vnode{
 	ptrVNode firstEdge;
-}AdjList[MaxNum];
-
+}AdjList;
 
 typedef struct GNode *ptrNode;
 struct GNode{
 	int Nv;
 	int Ne;
-	AdjList G;
+	AdjList* G;
 };
 typedef ptrNode LGraph;
 
@@ -32,21 +30,57 @@ LGraph Create(){
 	scanf("%s",&v);
 	graph->Nv=v;
 	graph->Ne=0;
+	graph->G=(AdjList*)malloc(sizeof(struct Vnode)*MaxNum);
 	for(int i=0;i<v;i++){
-		graph->G[i].firstEdge=NULL;
+		//
+		graph->G[i].firstEdge=(ptrVNode)malloc(sizeof(struct Vnode));
 	}
-	
+	printf("create  ok\n");	
 	return graph;	
 }
 
-struct 
+typedef struct enode *Enode;
+struct enode{
+	vertex v1;
+	vertex v2;
+	weight weight;
+};
+typedef Enode Edge;
 
 
 void insertEdge(LGraph graph,Edge e){
 	ptrVNode node;
-	node=(ptrVNode)malloc(sizeof(struct AdjVnode));
-	node->adjv=e->v2;
+	printf("insert ready\n");
+	node=(ptrVNode)malloc(sizeof(struct AdjVNode));
+	node->ad=e->v2; 
 	node->weight=e->weight;
-	
+	node->next=graph->G[e->v1].firstEdge;
 	graph->G[e->v1].firstEdge=node;
+	printf("insert ok\n");
 }
+
+int main(){
+	LGraph graph=Create();
+	Edge e=(Edge)malloc(sizeof(struct enode));
+	e->v1=0;
+	e->v2=1;
+	e->weight=1;
+	Edge h=(Edge)malloc(sizeof(struct enode));
+	h->v1=1;
+	h->v2=0;
+	h->weight=1;
+	 
+	insertEdge(graph,e);
+	insertEdge(graph,h);
+	
+	return 0;
+}
+
+
+
+
+
+
+
+
+
