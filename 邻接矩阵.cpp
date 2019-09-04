@@ -63,7 +63,7 @@ MGraph BuildGraph(){
 	return graph;
 } 
 
-//¼ò½àÄ£Ê½ 
+
 int G[Maxnum][Maxnum],nv,ne;
 void build(){
 	int i,j,v1,v2,w;
@@ -74,14 +74,7 @@ void build(){
 			G[v1][v2]=w;
 			G[v2][v1]=w;
 		}
-	}
-	for(i=0;i<nv;i++){
-		for(j=0;j<nv;j++){
-			printf("%d  ",G[i][j]);
-		}
-		printf("\n");
-	}
-	
+	}	
 }
 
 

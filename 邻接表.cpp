@@ -32,7 +32,6 @@ LGraph Create(){
 	graph->Ne=0;
 	graph->G=(AdjList*)malloc(sizeof(struct Vnode)*MaxNum);
 	for(int i=0;i<v;i++){
-		//
 		graph->G[i].firstEdge=(ptrVNode)malloc(sizeof(struct Vnode));
 	}
 	printf("create  ok\n");	
