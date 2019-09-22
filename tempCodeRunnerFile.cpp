@@ -2,12 +2,10 @@
 #include<stdlib.h>
 typedef int data_type;
 
-//Ë«ÏòÁ´±í 
 typedef struct node *ptrNode;
 struct node{
 	data_type data;
-	ptrNode next;
-	ptrNode last;	
+	ptrNode next;	
 };
 typedef ptrNode Node;
 
@@ -23,17 +21,17 @@ void insert(data_type data,linklist list){
 	Node p=(Node)malloc(sizeof(struct node));
 	p->data=data;
 	p->next=NULL;
-	p->last=NULL;
 	if(list->head==NULL){
 		list->head=p;
 		list->tail=p;
+		list->length++;
 	}else{
-		p->last=list->tail;
 		list->tail->next=p;
 		list->tail=p;
+		list->length++;
 	}
-	list->length++;
 }
+
 void show(linklist list){
 	Node p=list->head;
 	while(p){
@@ -43,61 +41,46 @@ void show(linklist list){
 	printf("\n");
 }
 
-//²åÈëÖ¸¶¨Î»ÖÃ 
+//æ’å…¥æŒ‡å®šä½ç½® 
 void insert_pos(linklist list,int postion,data_type data){
 	Node p=(Node)malloc(sizeof(struct node));
 	p->data=data;
-	p->next=NULL;
-	p->last=NULL;
-	
-	if(postion>=list->length){
-		p->last=list->tail;
+	if(postion>list->length){
 		list->tail->next=p;
 		list->tail=p;
+		p->next=NULL;
 	}else if(postion==0){
 		p->next=list->head;
-		list->head->last=p;
 		list->head=p;
 	}else{
-		Node n=list->head;
+		Node Nodep=list->head;
 		for(int i=0;i<postion-1;i++){
-			n=n->next;
+			Nodep=Nodep->next;
 		}
-		p->last=n;
-		n->next->last=p;
-		p->next=n->next;
-		n->next=p;
+		p->next=Nodep->next;
+		Nodep->next=p;
 	}
-	
 	list->length++;	
 }
 
 void delete_pos(linklist list,int pos){
-		
-		
-		if(pos>list->length-1){
-			printf("Î»ÖÃ²»ºÏ·¨\n");
+
+		if(pos>list->length){
+			printf("ä½ç½®ä¸åˆæ³•,å¤§äºé“¾è¡¨é•¿åº¦");
 		}else if(pos==0){
-			Node p=list->head;
-			p->next->last=NULL;
-			list->head=p->next;
-			free(p);//»ØÊÕÀ¬»ø 
-		}else if(pos==list->length-1){
-			Node p=list->tail;
-			p->last->next=NULL;
-			list->tail=p->last; 
-			free(p);//»ØÊÕÀ¬»ø 	
+			list->head=list->head->next;
+			list->length--;
 		}else{
 			Node p=list->head;
-			for(int i=0;i<pos-1;i++){
-				p=p->next;
+			for (int i = 0; i < list->length; i++)
+			{
+					p=p->next;
 			}
-			Node n=p->next;
-			n->next->last=p;
-			p->next=n->next;
-			free(n); 
-		}	
-		list->length--;
+				Node rubbish=p->next;
+				p->next=p->next->next;
+				free(rubbish);
+		}
+
 }
 
 
@@ -106,7 +89,7 @@ linklist create(){
 	list->head=NULL;
 	list->tail=NULL;
 	list->length=0;
-	printf("ÊäÈë½ÚµãÊıÁ¿£º\n");
+	printf("è¾“å…¥èŠ‚ç‚¹æ•°é‡ï¼š\n");
 	int sum=0,x=0;
 	scanf("%d",&sum);
 	for(int i=0;i<sum;i++){
@@ -117,82 +100,51 @@ linklist create(){
 	return list;
 }
 
-void find(linklist list,int pos){
-	Node p=list->head;
-	for (int i = 0; i < list->length; i++)
-	{
-		if (p->data==pos)
-		{
-			printf("%dÔÚÁ´±íµÄµÚ%dºÅÎ»ÖÃÉÏ\n",pos,i);
-			return;
-		}
-		p=p->next;
-	}
-	printf("´ËÁ´±í²»´æÔÚ¸ÃÔªËØ\n");
-}
-
-void show2(linklist list){
-		Node p=list->tail;
-		while(p){
-			printf("%d  ",p->data);
-			p=p->last;
-		}
-}
-
 void Gui() {
 	linklist list=NULL;
 	data_type x=0,y=0,z=0,po=-1;
 	int isprime=1;
 	do {
 		printf("\n\n     Menu\n");
-		printf("1. ´´½¨ÏßĞÔ±í\n");
-		printf("2. ²åÈëÒ»¸öÔªËØµ½Ä©Î²\n");
-		printf("3. É¾³ıÖ¸¶¨Î»ÖÃÔªËØ(ÏÂ±êÎª0¿ªÊ¼)\n");
-		printf("4. ²åÈëÒ»¸öÔªËØµ½Ö¸¶¨Î»ÖÃ(ÏÂ±êÎª0¿ªÊ¼)\n");
-		printf("5. ²éÕÒÄ³ÔªËØËùÔÚÎ»ÖÃ(ÏÂ±êÎª0¿ªÊ¼)\n");
-		printf("6. ÕıÏòÊä³öËùÓĞÔªËØ\n");
-		printf("7. ÄæÏòÊä³öËùÓĞÔªËØ\n");
-		printf("8. ÍË³ö\n");
+		printf("1. åˆ›å»ºçº¿æ€§è¡¨\n");
+		printf("2. æ’å…¥ä¸€ä¸ªå…ƒç´ åˆ°æœ«å°¾\n");
+		printf("3. åˆ é™¤æŒ‡å®šä½ç½®å…ƒç´ \n");
+		printf("4. æ’å…¥ä¸€ä¸ªå…ƒç´ åˆ°æŒ‡å®šä½ç½®\n");
+		printf("5. æŸ¥æ‰¾æŸå…ƒç´ æ‰€åœ¨ä½ç½®\n");
+		printf("6. è¾“å‡ºæ‰€æœ‰å…ƒç´ \n");
+		printf("7. ç»“æŸ\n");
 		scanf("%d",&x);
 		switch(x) {
 			case 1:
 				list=create();
 				break;
 			case 2:
-				printf("ÊäÈë²åÈëµÄÔªËØ: ");
+				printf("è¾“å…¥æ’å…¥çš„å…ƒç´ : ");
 				scanf("%d",&y);
 				insert(y,list);
 				break;
 			case 3:
-				printf("ÊäÈëËùÒªÉ¾³ıµÄÔªËØÎ»ÖÃ: ");
+				printf("è¾“å…¥æ‰€è¦åˆ é™¤çš„å…ƒç´ ä½ç½®: ");
 				scanf("%d",&z);
 				delete_pos(list,z);
 				break;
 			case 4:
-				printf("ÊäÈë²åÈëµÄÔªËØÒÔ¼°Î»ÖÃ)\n");
+				printf("è¾“å…¥æ’å…¥çš„å…ƒç´ ä»¥åŠä½ç½®\n");
 				printf("data:");
 				scanf("%d",&y);
-				printf("Î»ÖÃ:");
+				printf("ä½ç½®:");
 				scanf("%d",&z);
 				insert_pos(list,z,y);
 				break;
-			case 5:
-				printf("ÊäÈëÒª²éÕÒµÄÔªËØ£º\n");
-				scanf("%d",&y);
-				find(list,y);
-				break;	
-			case 6:
-				show(list);
-				break;	
 			case 7:
-				show2(list);
-				break;
-			case 8:
-				isprime=0;	
+				isprime=0;
 		}
 
 	} while(isprime==1);
 }
+
+
+
 
 
 int main(){
