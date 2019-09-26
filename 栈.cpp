@@ -38,18 +38,58 @@ int pop(stack *s){
 		printf("stack is empty!");
 		return -1;
 	}else{
+		printf("栈顶元素已删除");
 		return s->data[(s->top)--]; 
 	}
 	
 }
 
-int main(){
-	stack s=CreateStack(3);
-	push(&s,1);
-	push(&s,2);
-	push(&s,5);
-	printf("%d",pop(&s));
-	printf("%d",pop(&s));
+void getTop(stack *s){
+	if(is_empty(s)){
+		printf("stack is empty!");
+	}else{
+		printf("栈顶元素为：%d",s->data[s->top]);
+	}
 	
+} 
+
+void Gui(){
+	int x=0,y=0,is=0;
+	stack s;
+	do{
+		printf("\n\n     Menu\n");
+		printf("1. 初始化顺序栈\n");
+		printf("2. 插入一个元素\n");
+		printf("3. 删除栈顶\n");
+		printf("4. 取出栈顶\n");
+		printf("5. 退出\n");
+		scanf("%d",&x);
+		switch(x){
+			case 1:
+				s=CreateStack(100);
+				break;
+			case 2:
+				printf("data:");
+				scanf("%d",&y);	
+				push(&s,y);
+				break;
+			case 3:
+				pop(&s);
+				break;
+			case 4:
+				getTop(&s);
+				break;
+			case 5:
+				is=1;	
+						
+		} 
+	}while(is==0);
+	
+}
+
+int main(){
+	
+	Gui();
+	return 0;
 	
 } 
