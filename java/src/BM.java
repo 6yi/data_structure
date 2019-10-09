@@ -11,8 +11,8 @@ import java.util.HashMap;
 
 public class BM {
     public static void main(String[] args) {
-        char[] l="BNVHABVCABDABDBDASDFACAAS".toCharArray();
-        char[] p="ABDABDBDASDFACAAS".toCharArray();
+        char[] l="BNVHABVCABDAB我草SDFACAAS".toCharArray();
+        char[] p="我草".toCharArray();
         int l_len=l.length;
         int p_len=p.length;
         HashMap<Character,Integer> badChar=new HashMap<>();

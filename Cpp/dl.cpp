@@ -15,6 +15,7 @@ struct Queue{
 
 Queue create(){
 	Queue* q=(Queue*)malloc(sizeof(Queue));
+	//из╠Ь 
 	Node* p=(Node*)malloc(sizeof(Node));
 	p->data=999999;
 	p->next=NULL;

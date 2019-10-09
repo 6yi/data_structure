@@ -28,7 +28,6 @@ void insert(heap* p,type_data data){
 		return;
 	}
 	i=++p->size;
-	
 	for(;p->data[i/2]<data;i/=2){
 		p->data[i]=p->data[i/2];
 	}
