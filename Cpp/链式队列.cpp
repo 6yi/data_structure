@@ -45,9 +45,8 @@ int pop(Queue* q){
 	}
 }
 
-
-
 void show(Queue* q){
+	
 	Node* p=q->head->next;
 	while(p){
 		printf("%d  ",p->data);
@@ -66,8 +65,7 @@ int main(){
 		printf("1.创建队列\n");
 		printf("2.入队\n");
 		printf("3.出队\n");		
-		printf("4.显示队列元素\n");
-		printf("5.退出\n");		
+		printf("4.显示队列元素\n");		
 		scanf("%d",&x);
 		switch(x){
 			case 1:
@@ -86,11 +84,8 @@ int main(){
 				   }				
 					break;
 			case 4:
-					show(&q);
-					break;
-			case 5:
-					break;				
+					show(&q);		
+			
 		} 
 	}
-	
 }
