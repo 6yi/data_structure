@@ -48,17 +48,14 @@ stack CreateStack(int max_size){
 }
 
 bool is_full(stack *s){
-	return s->top==s->max_size ;
+	return s->top==s->max_size;
 }
 
 bool push(stack *s,Node x){
-	if(is_full(s)){
-		printf("stack is full！");
-		return false; 
-	}else{
-		s->data[++(s->top)]=x;
-		return true;
-	}
+
+	s->data[++(s->top)]=x;
+	return true;
+	
 }
 
 bool is_empty(stack *s){
@@ -79,8 +76,8 @@ void pt(Node* tree){
 		pt(tree->right_node);
 	}
 }
-
-//堆栈遍历
+//
+////堆栈遍历
 void stackpt(Node* tree,int max_size){
 	stack s=CreateStack(max_size);
 	while(tree||!is_empty(&s)){
@@ -94,7 +91,11 @@ void stackpt(Node* tree,int max_size){
 			tree=tree->right_node;
 		}
 	}
+	
 } 
+
+
+
 //=========================================================================================
 
 
@@ -140,28 +141,56 @@ Node* insert_node(Node* tree,type_data data){
 
 
 
-
-
-
-
-
-
-int main(){
+Node Create(int maxsize){
 	Node tree;
 	tree.data=NULL;
 	tree.left_node=NULL;
 	tree.right_node=NULL;
- 	int number[]={2,11,9,2,3,45,22,100};
- 	for(int i=0;i<sizeof(number)/4;i++){
- 		add_node(&tree,number[i]);
-	 }
+	printf("请依次输入节点:\n");
+	int y=0;
+	for(int i=0;i<maxsize;i++){
+		scanf("%d",&y);
+		add_node(&tree,y); 
+	} 
+	 return tree;
+} 
+
+
+int main(){
+
+	int x=0;
+	Node tree; 
+ 	do{
+		printf("\n1.建立二叉树\n");
+		printf("\n2.中序递归遍历\n"); 
+		printf("\n3.中序堆栈遍历\n"); 
+	 	printf("\n4.退出\n"); 
+	 	scanf("%d",&x);
+		int maxsize=0;
+		switch(x){
+			case 1: 
+					
+					printf("输入结点数量:");
+					scanf("%d",&maxsize);
+					tree=Create(maxsize);
+					break;
+			case 2:	pt(&tree);
+					break;
+			case 3:	stackpt(&tree,maxsize);
+					break;
+			case 4:x=-1;			
+		}  			
+	 
+	}while(x>0); 
+	return 0;
 //	pt(&tree);
 //	printf("\n");
 //	stackpt(&tree,sizeof(number)/4);
 //	printf("%d",find_pos(&tree,11)->data);
-	insert_node(&tree,900);
+//	insert_node(&tree,900);
 //	printf("%d",find_max(&tree)->data);
-	pt(&tree);
-	return 0;	 
+//	pt(&tree);
+//	return 0;	 
 }
+
 
