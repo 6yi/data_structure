@@ -17,13 +17,6 @@
       <change beforePath="$PROJECT_DIR$/../ArrayList.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../KMP.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Linklist.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/list_tp.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/list_tp.dir/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/list_tp.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/list_tp.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/list_tp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/list_tp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tempCodeRunnerFile.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tp2/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tp2/.idea/misc.xml" beforeDir="false" />
@@ -101,8 +94,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -150,17 +143,17 @@
       <workItem from="1575199896168" duration="604000" />
       <workItem from="1575264226447" duration="3698000" />
       <workItem from="1575450008805" duration="599000" />
+      <workItem from="1575523117985" duration="2000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11326000" />
+    <option name="totallyTimeSpent" value="11328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="236" y="65" width="1400" height="1000" extended-state="1" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19552238" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19850746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
