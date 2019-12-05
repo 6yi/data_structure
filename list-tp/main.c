@@ -7,11 +7,12 @@ typedef struct Node{
 
 typedef struct Graph{
 	Node** node;
+	int *nums;//¼ÇÂ¼¸÷½Úµã³õÊ¼µÄÈë¶ÈÇé¿ö
 	int size;
 }Graph;
 
 /*
- * é‚»æŽ¥è¡¨
+ * ÁÚ½Ó±í
  *
  * */
 void add(Graph* graph,int cow,int col){
@@ -32,12 +33,14 @@ void add(Graph* graph,int cow,int col){
 
 }
 
-Graph* create(int size){
+Graph* createTest(){
+    int size=12;
 	Graph *graph=(Graph*)malloc(sizeof(struct Graph));
 	graph->node=(Node**)calloc(size,sizeof(struct Node));
 	graph->size=size;
+    graph->nums=(int*)calloc(size, sizeof(int));
 	/*
-	 * æµ‹è¯•æ•°æ®
+	 * ²âÊÔÊý¾Ý
         0->1->3->2->11
         1->2
         2->4->4->6->7
@@ -52,22 +55,37 @@ Graph* create(int size){
         11
 	*/
    	add(graph,0,1);
+   	graph->nums[1]++;
    	add(graph,0,3);
+    graph->nums[3]++;
    	add(graph,0,2);
+    graph->nums[2]++;
    	add(graph,0,11);
+    graph->nums[11]++;
    	add(graph,1,2);
+    graph->nums[2]++;
    	add(graph,2,4);
-	add(graph,2,4);
+    graph->nums[4]++;
 	add(graph,2,6);
+    graph->nums[6]++;
     add(graph,2,7);
+    graph->nums[7]++;
     add(graph,3,4);
+    graph->nums[4]++;
     add(graph,4,6);
+    graph->nums[6]++;
     add(graph,8,11);
+    graph->nums[11]++;
     add(graph,8,9);
+    graph->nums[9]++;
     add(graph,8,10);
+    graph->nums[10]++;
     add(graph,9,11);
+    graph->nums[11]++;
     add(graph,10,5);
+    graph->nums[5]++;
     add(graph,5,7);
+    graph->nums[7]++;
 	for(int i=0;i<size;i++){
 		Node*p=graph->node[i];
         printf("%d",i);
@@ -80,32 +98,44 @@ Graph* create(int size){
     return graph;
 }
 
+
+Graph* create(){
+    int size=0;
+    printf("ÊäÈë½ÚµãÊýÁ¿:");
+    scanf("%d",&size);
+    Graph *graph=(Graph*)malloc(sizeof(struct Graph));
+    graph->node=(Node**)calloc(size,sizeof(struct Node));
+    graph->size=size;
+    graph->nums=(int*)calloc(size, sizeof(int));
+    printf("¿ªÊ¼ÊäÈë±ß,3 1Ôò±íÊ¾½Úµã3µ½½Úµã1Ö®¼äÓÐÒ»Ìõ±ß,ÊäÈë-1 -1±íÊ¾½áÊø\n");
+    int cow=0,col=0;
+    scanf("%d %d",&cow,&col);
+    do{
+        add(graph,cow,col);
+        graph->nums[col]++;
+        scanf("%d %d",&cow,&col);
+    }while (cow!=-1&&col!=-1);
+    printf("AOVÍøÉú³É³É¹¦\n");
+    return graph;
+}
+
+
 void tp(Graph *graph){
     int size=graph->size;
     /*
-     * é¡¶ç‚¹å…¥åº¦æ•°ç»„
+     * ¶¥µãÈë¶ÈÊý×é
      * */
-    int *nums=(int*)calloc(size, sizeof(int));
+    int *nums=graph->nums;
     /*
-     * å·²è®¿é—®èŠ‚ç‚¹æ•°ç»„
+     * ÒÑ·ÃÎÊ½ÚµãÊý×é
      * */
     int *visit=(int*)calloc(size, sizeof(int));
-
-    for (int i = 0; i < size; ++i) {
-        Node*p=graph->node[i];
-        while (p){
-            nums[p->col]++;
-            p=p->next;
-        }
-    }
     for(int i=0;i<size;i++){
-
         int now=-1;
         for(int j=0;j<size;j++){
             if(nums[j]==0&&visit[j]==0){
                 now=j;
                 visit[j]=1;
-
                 break;
             }
         }
@@ -118,11 +148,27 @@ void tp(Graph *graph){
     }
 }
 
+void showAov(Graph* graph){
+    for (int i = 0; i < graph->size; ++i) {
+        Node*p=graph->node[i];
+        printf("%d",i);
+        while (p){
+            printf("->%d",p->col);
+            p=p->next;
+        }
+        printf("\n");
+    }
+    printf("\n\n\n");
+}
 
 int main(){
-	Graph* graph=create(12);
+
+	Graph* graph=createTest();
+	showAov(graph);
 	tp(graph);
+	printf("\n");
 	system("pause");
+
 }
 
 

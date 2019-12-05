@@ -12,44 +12,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb2540a6-078d-4b3f-9208-75787d8fd5c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DFS/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DFS/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DFS/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/TP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-tp/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-tp/.idea/list-tp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-tp/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-tp/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-tp/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-tp/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-tp/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-tp/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp2/.idea/tp2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp2/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp2/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp3/.idea/tp3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp3/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp3/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp3/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ArrayList.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/树1.exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../KMP.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Linklist.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list-tp/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../list-tp/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list-tp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../list-tp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list-tp/cmake-build-debug/CMakeFiles/list_tp.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../list-tp/cmake-build-debug/CMakeFiles/list_tp.dir/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list-tp/cmake-build-debug/CMakeFiles/list_tp.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../list-tp/cmake-build-debug/CMakeFiles/list_tp.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list-tp/cmake-build-debug/list_tp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../list-tp/cmake-build-debug/list_tp.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list-tp/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../list-tp/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tempCodeRunnerFile.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp2/.idea/tp2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp2/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp2/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3/.idea/tp3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp3/main.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../图.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../堆1.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../指针堆栈.cpp" beforeDir="false" />
@@ -81,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-66">
-              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="-704">
+              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -102,9 +89,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="727" />
-    <option name="y" value="77" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="236" />
+    <option name="y" value="65" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -136,6 +123,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -165,8 +153,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="GDB Remote Debug.Unnamed" />
       <item itemvalue="CMake Application.TP" />
+      <item itemvalue="GDB Remote Debug.Unnamed" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -185,22 +173,26 @@
       <workItem from="1574751703141" duration="3229000" />
       <workItem from="1574941389402" duration="3454000" />
       <workItem from="1574955311532" duration="638000" />
+      <workItem from="1575199896170" duration="624000" />
+      <workItem from="1575264225366" duration="602000" />
+      <workItem from="1575450009043" duration="734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12018000" />
+    <option name="totallyTimeSpent" value="13978000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="727" y="77" width="1400" height="1000" extended-state="0" />
+    <frame x="236" y="65" width="1400" height="1000" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21268657" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2216418" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" x="774" y="367" width="688" height="369" id="Run" order="2" type="FLOATING" weight="0.32924107" />
-      <window_info anchor="bottom" x="1428" y="461" width="557" height="515" id="Debug" order="3" type="FLOATING" weight="0.4252232" />
+      <window_info anchor="bottom" x="716" y="217" width="440" height="695" id="Debug" order="3" type="FLOATING" weight="0.4252232" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -209,7 +201,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="CMake" order="11" />
-      <window_info anchor="bottom" x="1018" y="215" width="688" height="279" id="Messages" order="12" type="FLOATING" visible="true" weight="0.32924107" />
+      <window_info anchor="bottom" x="1018" y="215" width="688" height="279" id="Messages" order="12" type="FLOATING" weight="0.32924107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -233,8 +225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        <state relative-caret-position="-704">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
