@@ -68,6 +68,8 @@ void tp(Graph** graph,int size){
     }
 }
 
+
+
 int main(){
     int size=0;
     scanf("%d",&size);
