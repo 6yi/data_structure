@@ -1,5 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
+int *nowVisit;//正在访问或访问过的结点
+int *top;//拓扑排序完毕的数组
+int pos=0;
+
 typedef struct Node{
 	int col;
 	struct Node* next;
@@ -7,7 +11,6 @@ typedef struct Node{
 
 typedef struct Graph{
 	Node** node;
-	int *nums;//记录各节点初始的入度情况
 	int size;
 }Graph;
 
@@ -43,46 +46,53 @@ Graph* create(){
     Graph *graph=(Graph*)malloc(sizeof(struct Graph));
     graph->node=(Node**)calloc(size,sizeof(struct Node));
     graph->size=size;
-    graph->nums=(int*)calloc(size, sizeof(int));
+    nowVisit=(int*)calloc(size,sizeof(int));
+    top=(int*)calloc(size,sizeof(int));
+    pos=size-1;
     printf("开始输入边,3 1则表示结点3到结点1之间有一条边,输入-1 -1表示结束\n");
     int cow=0,col=0;
     scanf("%d %d",&cow,&col);
     do{
         add(graph,cow,col);
-        graph->nums[col]++;
         scanf("%d %d",&cow,&col);
     }while (cow!=-1&&col!=-1);
     return graph;
 }
 
-
-void topSort(Graph *graph){
-    int size=graph->size;
-    /*
-     * 顶点入度数组
-     * */
-    int *nums=graph->nums;
-    /*
-     * 已访问节点数组
-     * */
-    int *visit=(int*)calloc(size, sizeof(int));
-    for(int i=0;i<size;i++){
-        int now=-1;
-        for(int j=0;j<size;j++){
-            if(nums[j]==0&&visit[j]==0){
-                now=j;
-                visit[j]=1;
-                break;
+int DFS(int u,Graph *graph){
+    nowVisit[u]=-1;
+    Node*p=graph->node[u];
+    while (p){
+        if(nowVisit[p->col]==-1){
+            return 0;
+        }
+        if (nowVisit[p->col]==0){
+            if (DFS(p->col,graph)==0){
+                return 0;
             }
         }
-        Node*p=graph->node[now];
-        while (p){
-            nums[p->col]--;
-            p=p->next;
+        p=p->next;
+    }
+    nowVisit[u]=1;
+    top[pos--]=u;
+    return 1;
+}
+
+void topSort(Graph *graph){
+    for(int i=0;i<graph->size;i++){
+        if(nowVisit[i]==0){
+            if(DFS(i,graph)==0){
+                printf("有环图,拓扑排序失败!");
+                return;
+            }
         }
-        printf("%d ",now);
+    }
+    printf("\n\n拓扑排序为: %d",top[0]);
+    for (int j = 1; j < graph->size; ++j) {
+        printf("->%d",top[j]);
     }
 }
+
 
 void showAov(Graph* graph){
     for (int i = 0; i < graph->size; ++i) {

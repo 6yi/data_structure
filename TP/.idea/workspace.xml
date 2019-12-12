@@ -12,17 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb2540a6-078d-4b3f-9208-75787d8fd5c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DFS_TOP_Sort/.idea/DFS_TOP_Sort.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DFS_TOP_Sort/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DFS_TOP_Sort/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DFS_TOP_Sort/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../list-top2/.idea/list-top2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../list-top2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../list-top2/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../list-top2/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../plm/.idea/plm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../plm/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../plm/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../plm/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ArrayList.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DFS_TOP_Sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DFS_TOP_Sort/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../KMP.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Linklist.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list-tp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../list-tp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list-tp/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../list-tp/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tempCodeRunnerFile.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tp2/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tp2/.idea/misc.xml" beforeDir="false" />
@@ -67,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1276">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="217">
+              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -88,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="236" />
     <option name="y" value="65" />
     <option name="width" value="1400" />
@@ -122,7 +127,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../list-tp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DFS_TOP_Sort" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -177,16 +182,17 @@
       <workItem from="1575450009043" duration="734000" />
       <workItem from="1575523118215" duration="2000" />
       <workItem from="1575607246114" duration="1592000" />
+      <workItem from="1576127883668" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15572000" />
+    <option name="totallyTimeSpent" value="15587000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="236" y="65" width="1400" height="1000" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22761194" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1652452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -225,8 +231,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="217">
+          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
