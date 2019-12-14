@@ -12,23 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50a0ac6b-0148-4950-ac87-f7d0897c5416" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../list-top2/.idea/list-top2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-top2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-top2/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-top2/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../plm/.idea/plm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../plm/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../plm/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../plm/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ArrayList.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DFS_TOP_Sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DFS_TOP_Sort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DFS_TOP_Sort/main.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../KMP.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Linklist.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list-top2/main.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tempCodeRunnerFile.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tp2/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tp2/.idea/misc.xml" beforeDir="false" />
@@ -74,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -94,7 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1271" />
     <option name="width" value="911" />
     <option name="height" value="1037" />
@@ -169,15 +159,16 @@
       <workItem from="1575887815437" duration="1890000" />
       <workItem from="1575963532080" duration="2660000" />
       <workItem from="1576080921076" duration="728000" />
-      <workItem from="1576127458878" duration="1113000" />
+      <workItem from="1576127458878" duration="1569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23594000" />
+    <option name="totallyTimeSpent" value="24050000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18869936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -211,7 +202,7 @@
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>

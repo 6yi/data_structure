@@ -12,23 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80693135-cd90-47c3-afca-c58ca2e0e046" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../list-top2/.idea/list-top2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-top2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-top2/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list-top2/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../plm/.idea/plm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../plm/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../plm/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../plm/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ArrayList.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../KMP.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Linklist.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list-tp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../list-tp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list-tp/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../list-tp/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list-top2/main.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tempCodeRunnerFile.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tp2/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tp2/.idea/misc.xml" beforeDir="false" />
@@ -65,21 +55,9 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="63" column="5" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -152,15 +130,16 @@
       <workItem from="1575607606968" duration="8087000" />
       <workItem from="1575780447607" duration="686000" />
       <workItem from="1575887721548" duration="93000" />
-      <workItem from="1576127900142" duration="1299000" />
+      <workItem from="1576127900142" duration="1338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10165000" />
+    <option name="totallyTimeSpent" value="10204000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1271" y="0" width="911" height="1037" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.06227967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
